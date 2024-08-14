@@ -1,3 +1,21 @@
+# CV
+
+This project publishes my personal CV via Cloudflare Pages, you can see the final result here: [https://cv.schwarz.blue/cv.en.html](https://cv.schwarz.blue).
+
+It's based on [casualwriter's markdown CV](https://github.com/casualwriter/casual-markdown-cv). Below are the steps to reproduce everything.
+
+If you are happy with my style and layout, you can clone this and change these things:
+
+1. In `header.html` change the \<title\>.
+2. Change `cv.en.md` and `cv.de.md` or add more/less languages.
+
+Deployment to [https://pages.cloudflare.com](Cloudflare Pages) is just as easy:
+
+1. Create a new Page.
+2. Build command: `./create.sh`
+3. Build output directory: `/page`
+4. Add custom domain
+
 # Fonts
 
 `page/style.css` includes CSS for Molengo, but it's easily swappable.
