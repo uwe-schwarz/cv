@@ -1,18 +1,15 @@
 /* fonts */
 body {
-  /* select Alef, Molengo or Roboto and fall-back default sans-serif */
-  /* font-family: Alef, sans-serif; */
   font-family: Molengo, sans-serif;
-  /* font-family: Roboto, sans-serif; */
 }
-/* different font for printing */
+
+/* different font for printing
 @media print {
   body {
-    /* font-family: Alef, sans-serif; */
     font-family: Molengo, sans-serif;
-    /* font-family: Roboto, sans-serif; */
   }
-}
+}*/
+
 /* molengo-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -20,38 +17,6 @@ body {
   font-style: normal;
   font-weight: 400;
   src: url('fonts/molengo-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* roboto-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/roboto-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* roboto-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/roboto-v32-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* alef-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Alef';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/alef-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* alef-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Alef';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/alef-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dark/light mode */
@@ -71,11 +36,18 @@ body {
 
 /* mobile */
 @media only screen and (max-width: 800px) {
+  /* no logos */
   .worklist {
     background-image: none !important;
     padding-right: 0px !important;
   }
 
+  /* no logo switch button */
+  .logoswitch {
+    display: none
+  }
+
+  /* date range on own line */
   span.date {
     min-width: 100%;
     font-size: 80%;
