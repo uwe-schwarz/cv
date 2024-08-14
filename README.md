@@ -9,7 +9,7 @@ If you are happy with my style and layout, you can clone this and change these t
 1. In `header.html` change the \<title\>.
 2. Change `cv.en.md` and `cv.de.md` or add more/less languages.
 
-Deployment to [https://pages.cloudflare.com](Cloudflare Pages) is just as easy:
+Deployment to [Cloudflare Pages](https://pages.cloudflare.com) is just as easy:
 
 1. Create a new Page.
 2. Build command: `./create.sh`
