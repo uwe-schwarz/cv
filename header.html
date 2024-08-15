@@ -2,10 +2,11 @@
 <html>
   <head>
     <title>CV Uwe Schwarz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- FontAwesome -->
     <script defer src="js/brands.js"></script>
@@ -16,7 +17,7 @@
     <script src="js/casual-markdown.js"></script>
 
     <!-- links open in new tab -->
-    <base target="_blank">
+    <base target="_blank" />
     <script type="text/javascript">
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.classList.add('dark');
@@ -50,7 +51,6 @@
         }
       }
     </script>
-</style>
   </head>
   <body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';">
 <div class="topbar"><button class="logoswitch" onclick="togglelogos()"><i class="fa-solid fa-images"></i></button> <button onclick="toggledarklight()"><i class="fa-solid fa-moon"></i></button> <a target="_self" href="cv.en.html">EN</a> <a target="_self" href="cv.de.html">DE</a></div>
